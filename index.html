@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="pstyle.css">
+    <script src="https://kit.fontawesome.com/69ccfcc3d7.js" crossorigin="anonymous"></script>
+    <script src="pscript.js"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <img src="E:\4.portfolio minor project\images\naniphoto.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE B.Tech Student</p>
+                <h1>Hi, I'm <span>Naganishith</span><br>From India</h1>
+            </div>
+         </div>
+    </div> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/01a.jpg ">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm a 3rd year Computer Science & Engineering Student. Currently I am pursuing B.Tech from SR University in Warangal. I love to do competitive programming and web Development. I am always curious to know how devices work and how they are connected on internet, how they commuicate each other, how internet works. So I am further trying to learn stuff, so i get to know how internet works, how devices are programmed and works in deep detail ...
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Java, Python, C#.Net, Datastructures.</li>
+                            <li><span>Web Technologies</span><br>PHP, MySQL, HTML, CSS, JavaScript.</li>
+                            <li><span>Soft Skills:</span><br>Leadership/Communication/presentation/Adaptability/problem solving/Team Management.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!-- <li><span>Intenships</span></li> -->
+                            <li><span>2024-current</span><br>A.I & M.L Internship from Gustovalley Technovations</li><li>Generative AI Virtual Internship by Google</li>
+                            <li><span>2023-24</span><br>Cyber security virtual Internship by paloalto networks</li><li>Android Developement Virtual Internship by Google</li><li>ASP.NET and python training & certification</li>
+                            <li><span>Workshops</span><br>Hands-on Workshop on Nework Switching & Routing</li>
+                            <li>Data visualization for scientific computing using tableau workshop</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-26</span><br>B.Tech, Computer Science & Engineering<br>SR University ,warangal.</li>
+                            <li><span>2020-23</span><br>DIPLOMA, Computer Science & Engineering<br>VMR polytechnic ,warangal.</li>
+                            <li><span>2020</span><br>Certificate of Secondary Education(SSC)<br>Vandana High School,warangal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- projects -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I do UI/UX design for the website that helps website to get a unique look..</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Design</h2>
+                    <p>I develop application. I create mobile apps with eye catching UI..</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>SocialMedia Campaigns</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elite..</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pho1.jpeg">
+                    <div class="layer">
+                        <h3>Face Detection and Outfit Suggestions</h3>
+                        <p>A web-based application that uses computer vision and machine learning to detect faces, determine dominant skin tones, and provide tailored outfit suggestions. The application is built with Flask for backend processing and features an interactive frontend for easy use.</p>
+                        <a href="https://github.com/NAGANISHITH/Outfit-prediction"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pho4.jpeg">
+                    <div class="layer">
+                        <h3>Sign Language Detection Using Convolution Neural Networks</h3>
+                        <p>Python project to detect the hand gestures using camera and translating them into text that is useful for communication with mute people.</p>
+                        <a href="https://github.com/NAGANISHITH/AIML-PROJECT"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pho3.jpeg">
+                    <div class="layer">
+                        <h3>Secure Image Steganography</h3>
+                        <p>Developed a secure GUI-based steganography tool using Tkinter, integrating LSB image encoding with AES (Fernet) encryption and bcrypt password hashing for real-time protected message embedding and decryption.</p>
+                        <a href="https://github.com/NAGANISHITH/encryption-decryption-using-steganography"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+     <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>naganishithk2005@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>91+ 7989267733</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1F2DTdYJPo/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/qr/CGL6OMGWERRSL1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/ur_nishith/profilecard/?igsh=MWpmYmJhOXByeWd5ag=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kuchanapally-naganishith"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/NAGANISHITH"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/u/NAGANISHITH/"><i class="fa-brand fa-link"></i></a>
+                        
+                        
+                        
+
+                    </div>
+                    <a href="NISHITH_S_RESUME.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <a style="margin-left: 40%; color: white;"  href="https://docs.google.com/spreadsheets/d/1Bi1AA1YKs-ZpWsb8Vjo0xVxWqju0wWgWKkZhrW40xGs/edit?gid=0#gid=0">See contact-form details</a>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Naganishith.<i class="fa-regular fa-heart"></i>S.R.U mini project</p>
+        </div>
+    </div>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyDh92DfG3df-pKtINpCIPWHowG4nF4KKrNfRdPOBkmn18R8ydmxu4O-4usgUzwGIwkEw/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+    </script>
+</body>
+</html>
